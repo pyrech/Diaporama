@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Diaporama</title>
+		
+		<link rel="stylesheet" type="text/css" href="diapo.css" />
+		
+		<script type="text/javascript" src="diapo.js"></script>
+		<script type="text/javascript">
+			// <![CDATA[
+			window.onload = function()
+			{			
+				// Variables modifiables
+				
+				// Repertoire où se trouvent les photos
+				Repertoire = 'http://www.yourdomain.ext/dir/images/';
+				// Tableau contenant le nom de toutes les images
+				Tab_nom_images = ['Demo1.jpg', 'Demo2.jpg', 'Demo3.jpg', 'Demo4.jpg', 'Demo5.jpg'];
+				// Tableau contenant le nom de toutes les légendes
+				Tab_nom_legende = ['Demo 1', 'Demo 2', 'Demo 4', 'Demo 4', 'Demo 5'];
+				// Tableau contenant la description de toutes les légendes
+				Tab_description_legende = ['Description 1', 'Description 2', 'Description 3', 'Description 4', 'Description 5'];
+			
+				// On initialise tout, et on définit la div qui recevra le diapo
+				Init("conteneur-diapo");
+			}
+			//]]>
+		</script>
+		
+		<style>	
+			div#conteneur-diapo {width:	600px; height: 500px;}
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<div id="conteneur-diapo"></div>
+	</body>
+	
+</html>

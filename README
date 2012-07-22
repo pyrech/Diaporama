@@ -1,0 +1,29 @@
+/*----------------------------------------------------------------
+
+	Auteur: Pyrech  ( github.com/Pyrech )
+
+	Version: 28 juillet 2011
+	
+	You can use this script in the way you want. It's free to use.
+	Vous pouvez utilisez ce script comme vous le voulez. Il est libre d'utilisation.
+
+----------------------------------------------------------------*/
+
+
+
+Pour utilisez le diaporama, suivez ces étapes :
+
+1 - Sur la page index, pensez à modifier le lien des fichiers css et js.
+
+2 - Sur la page index, modifiez dans le script, le répertoire des photos, le nom de la photo,
+    le nom sur la légende et la description sur la légende, toujours dans le même ordre !
+
+3 - Sur la page index, à l'appel de la fonction init(), indiquer en paramètres, entre guillements ("),
+    le nom de la div qui va accueillir le diaporama.
+
+4 - Dans vos feuilles de styles personnelles, ou dans le fichier diapo.css, ou dans la page
+    (par défaut), veuillez définir la taille que vous souhaitez pour le diapo (par défaut 600*500px).
+    
+
+5 - Facultatif : vous pouvez modifier la taille des photos, changez de controleurs (dans ressources/,
+    mais à vous de modifier les fichier diapo.css et diapo.js en conséquence.

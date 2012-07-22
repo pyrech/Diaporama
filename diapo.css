@@ -1,0 +1,109 @@
+/*----------------------------------------------------------------
+
+	Auteur: Pyrech  ( github.com/Pyrech )
+
+	Version: 28 juillet 2011
+	
+	You can use this script in the way you want. It's free to use.
+	Vous pouvez utilisez ce script comme vous voulez. Il est libre d'utilisation.
+
+----------------------------------------------------------------*/
+
+div#diapo {
+	position:								relative;
+	width:									100%;
+	height:									100%;
+	margin:									0;
+	padding:								0;
+	z-index:								1;
+	
+	overflow:								hidden;
+}
+img#loader {
+	position:								absolute;
+	top:									50%;
+	left:									50%;
+	width:									126px;
+	height:									22px;
+	margin-top:								-11px; /* - moitié de la hauteur */
+	margin-left:							-63px; /* - moitié de la largeur */
+	z-index:								5;
+}
+img.plans {
+	display:								none;
+	position:								absolute;
+	margin:									0 auto 0 auto;
+	
+	border:									none;
+}
+img#plan0 {
+	z-index:								2;
+}
+img#plan1 {
+	z-index:								3;
+}
+div#barre-outils {
+	display:								none;
+	position:								absolute;
+	bottom:									0;
+	width:									100%;
+	margin:									0;
+	padding:								0;
+	z-index:								4;
+	
+	background-color:						#000000;
+	background-color:						rgba(0,0,0,0.8);
+	overflow:								hidden;
+}
+ul#controleurs {
+	padding:								0;
+	margin:									0;
+	
+	list-style-type:						none;
+}
+ul#controleurs li {
+	float:									left;
+	height:									18px;
+	margin:									15px 10px 5px 10px;
+	padding:								0;
+}
+ul#controleurs li#precedent {
+	background-image:						url(ressources/controller-prev.gif);
+	width:									28px;
+}
+ul#controleurs li#pause {
+	background-image:						url(ressources/controller-pause.gif);
+	width:									20px;
+}
+ul#controleurs li#play {
+	background-image:						url(ressources/controller-pause.gif);
+	width:									20px;
+	background-position:					20px 0;
+}
+ul#controleurs li#suivant {
+	background-image:						url(ressources/controller-next.gif);
+	width:									28px;
+}
+ul#controleurs li:hover {
+	background-position:					0 18px;
+	cursor:									pointer;
+}
+ul#controleurs li#play:hover {
+	background-position:					20px 18px;
+}
+div#barre-outils p {
+	margin:									0 10px 5px 140px;
+	padding:								0;
+
+	font-size:								12px;
+	text-align:								justify;
+	font-weight:							400;
+	font-family:							"Arial", sans-serif;
+	color:									#ffffff;
+}
+div#barre-outils p#nom {
+	margin:									5px 10px 0 140px;	
+	
+	font-size:								18px;
+	font-weight:							bold;
+}
